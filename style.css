@@ -5,18 +5,17 @@
 }
 
 body {
-    margin: 100px;
+    margin-top: 100px;
 }
 
 h1,
 h2,
 h3 {
-    text-align: center;
     margin: 0;
 }
 
 h1 {
-    font-size: 96px;
+    font-size: 78px;
 }
 
 h2 {
@@ -35,25 +34,29 @@ p {
 
 .navigation-links {
     display: flex;
-    margin-top: 40px;
+    margin: 40px 0px;
     justify-content: center;
 }
 
 .navigation-links a {
     margin: 20px;
+}
+
+.primary-link {
     border-radius: 4px;
     padding: 20px 15px;
     text-decoration: none;
     text-transform: capitalize;
-}
-
-.contact-link {
     background: var(--primary-color);
     box-shadow: var(--box-shadow);
     color: white;
 }
 
-.about-link {
+.secondary-link {
+    border-radius: 4px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
 }
@@ -84,16 +87,37 @@ p {
     text-decoration: underline;
 }
 
-.primary-link {
-    border-radius: 4px;
-    padding: 20px 15px;
-    text-decoration: none;
-    text-transform: capitalize;
-    background: var(--primary-color);
-    box-shadow: var(--box-shadow);
-    color: white;
-}
+@media (max-width: 576px) {
+    body {
+        margin: 55px 15px;
+    }
 
-.col-md-6 h2 {
-    text-align: start;
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .navigation-links{
+        margin: 0px 0px ;
+    }
+
+    .disp-img {
+        display: none;
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .email-link {
+        font-size: 21px;
+    }
 }
